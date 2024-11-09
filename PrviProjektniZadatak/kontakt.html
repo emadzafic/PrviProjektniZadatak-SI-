@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bos">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Pametni Gradovi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PAMETNI GRADOVI</h1>
+            <p class="podnaslov">Tehnologije koje oblikuju našu budućnost</p>
+        </header>
+        <div>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <a href="index.html">Početna</a> &nbsp; | &nbsp;
+                        <a href="tehnologije.html">Tehnologije</a> &nbsp; | &nbsp;
+                        <a href="odrzivost.html">Održivost</a> &nbsp; | &nbsp;
+                        <a href="transport.html">Transport</a> &nbsp; | &nbsp;
+                        <a href="kontakt.html">Kontakt</a>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+    <div class="container">
+        <header>
+            <h1>Kontaktirajte nas!</h1>
+            <p>Ukoliko imate bilo kakva pitanja, slobodno nas kontaktirajte!</p>
+        </header>
+        
+        <div class="kontakt-forma">
+            <form method="POST">
+                <div class="forma-grupa">
+                    <label for="name">Ime i Prezime:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="forma-grupa">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="forma-grupa">
+                    <label for="subject">Predmet:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="forma-grupa">
+                    <label for="message">Poruka:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="forma-grupa">
+                    <label for="telefon">Broj telefona (nije obavezno):</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="+387 xx xxx xxx ">
+                </div>
+
+                <div class="forma-grupa">
+                    <p>Preferirani način kontakta:</p>
+                    <div class="radio-opcija">
+                    <label for="email-opcija"> Email </label>
+                    <input type="radio" name="kontakt_preferenca" value="email" checked>
+                </div>
+                <div class="radio-opcija">
+                    <label for="telefon-opcija">Telefon</label>
+                    <input type="radio" name="kontakt_preferenca" value="telefon">
+                </div>
+            </div>
+
+                <div class="forma-grupa">
+                    <label for="datum">Datum(slanja poruke): </label>
+                    <input type="date" id="datum" name="datum">
+                </div>
+                
+                <div class="forma-grupa">
+                    <button type="submit">Pošaljite poruku</button>
+                </div>
+
+            </form>
+        </div>
+        
+        <footer>
+            <br>
+            <h4>Naše društvene mreže: </h4>
+            <div class="mreze-ikone">
+                <span><a href="https://ba.linkedin.com/">LinkedIn</a></span>
+                <span><a href="https://github.com/emadzafic">GitHub</a></span>
+            </div>
+            <br>
+            <p>Copyright © 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
